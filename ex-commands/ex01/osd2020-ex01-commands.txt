@@ -1,1 +1,2 @@
 # This is a test command reference file for Exercise - 1 in the Red Hat OpenShift DevOps Engineer course 2020
+# This is a test line number 2
