@@ -1,1 +1,10 @@
 # This is a test command reference file for Exercise - 5 in the Red Hat OpenShift DevOps Engineer course 2020
+
+oc new-project yourproject-cicd --display-name="My CICD Project"
+
+oc new-app jenkins-persistent --param MEMORY_LIMIT=2Gi --param DISABLE_ADMINISTRATIVE_MONITORS=true --param ENABLE_OAUTH=true
+oc set resources dc jenkins --limits=cpu=2 --requests=cpu=1,memory=2Gi
+
+watch oc get pod
+
+oc get route jenkins -o jsonpath='{.spec.host}{"\n"}'
