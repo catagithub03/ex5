@@ -1,4 +1,4 @@
-package com.ibm.academy.controller;
+package com.skills.academy.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.ibm.academy;
+package com.skills.academy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -36,7 +36,7 @@ public class SpringBootApplicationData implements CommandLineRunner {
 	@Bean
 	public Docket swaggerApi() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.ibm.academy.controller")).paths(PathSelectors.any()).build()
+				.apis(RequestHandlerSelectors.basePackage("com.skills.academy.controller")).paths(PathSelectors.any()).build()
 				.apiInfo(new ApiInfoBuilder().version("1.0").title("Employee Management API Skills Academy OpenShift")
 						.description("Employee Management API Skills Academy v1.0").build());
 	}
