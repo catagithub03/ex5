@@ -4,14 +4,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class InstanceService {
+public class EmployeeService {
 
 	// @Autowired
 	// private InstanceRepository repository;
 
 	@GetMapping("/")
-	public String getStudents() {
-		return "say Hello";
+	public String getEmployee() {
+		return "Say Hello";
 	}
 
 	/*
