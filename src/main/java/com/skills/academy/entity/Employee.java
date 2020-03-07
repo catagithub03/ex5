@@ -41,11 +41,11 @@ public class Employee {
 		return organization;
 	}
 
-	public void setOrganizationId(String organization) {
+	public void setOrganization(String organization) {
 		this.organization = organization;
 	}
 
-	public String getDepartmentId() {
+	public String getDepartment() {
 		return department;
 	}
 
@@ -81,6 +81,14 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", organization=" + organization + ", department=" + department + ", name=" + name
 				+ ", role=" + role + "]";
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 }
